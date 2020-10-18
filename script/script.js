@@ -136,5 +136,7 @@ $('#login').css('display', 'none');
 function logout(){
 localStorage.setItem("user","");
 $('#compte').css('display', 'none');
+$('#notification').css('display', 'none');
+$('#message').css('display', 'none');
 $('#login').css('display', 'inline-block');
 }
