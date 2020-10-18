@@ -1,0 +1,153 @@
+<!doctype html>
+
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<!--<link rel="shortcut icon" href="#favicon.ico" type="image/x-icon" />-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Global stylesheet-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<!--Fontawesome has bunch of icons-->
+	<script src="https://kit.fontawesome.com/649b675417.js"></script>
+	<!--add jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--Bootstrap CND-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--Include script loads common html components-->
+</head>
+
+<body class="container-fluid margin-top bg-light">
+<nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg" style="background-color: #8f001a  !important">
+  <a class="navbar-brand" href="index.html">Projectry</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégorie</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Psychologie.html">Psychologie</a>
+			  <a class="dropdown-item" href="Mathematique.html">Mathématiques</a>
+			  <a class="dropdown-item" href="#">Software</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Nouvelles additions</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="all.html">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="all.html">Superviseurs</a></li>
+  </ul>
+<ul class="nav navbar-nav navbar-right">
+  <li>
+    <form id="myform" action="search.html" class="form-inline">
+    <button type="submit" value="submit" class="btn-secondary transparent fas fa-search" ></button>
+    <input id="form-field" class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+  </form>
+</li>
+    <li id="login" class="nav-item"><a href="login.html" class="nav-link"><button class="btn-primary" style="background-color: #8f001a  !important; border-color: #fff !important"  >login</button></a></li>
+    <li id="message" class="nav-item"><a href="" class="nav-link"><i class="fa fa-envelope large"></i></a></li>
+    <li id="notification" class="nav-item"><a href="" class="nav-link"><i class="fa fa-bell large" aria-hidden="true"></i></a></li>
+    
+    <li id="compte"><div class="dropdown transparent">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #8f001a  !important; border-color: #fff !important" >
+    <i class="fas fa-user"></i>&nbsp;Mon compte
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="reservation.html">Mes projets</a>
+    <a class="dropdown-item" href="#">Paramètres</a>
+    <a onclick="logout()" class="dropdown-item" href="#">Se déconnecter</a>
+  </div>
+</div></li>
+  </ul>
+  </div>
+</nav>
+
+	<section>
+		<h2 class="display-5">Nouvelles additions&nbsp;<i class="fas fa-angle-right"></i></h2>
+		<div class="d-flex flex-row justify-content-center">
+			<div id="Pascalus Calculus" class="card book">
+				<div class="card-body">
+				<a onclick="select(id1)" href="projet.html"><h3 class="card-title black">Projet 1</h3></a>
+				<p class="card-text"><i>La matière est présentée de façon simple et stimulante, et l'accent est mis sur les habiletés essentielles à la réussite en chimie organique</i></p>
+				</div>
+			</div>
+			<div class="card book">
+				<div class="card-body">
+				<a onclick="select(id2)" href="projet.html"><h3 class="card-title black">Projet 2</h3></a>
+				<p class="card-text"><i>Mécanique pour ingénieurs, 3e édition accompagne les étudiants de premier cycle universitaire en génie...</i></p>
+				</div>
+			</div>
+			<div class="card book">
+				<div class="card-body">
+				<a onclick="select(id3)" href="projet.html"><h3 class="card-title black">Projet 3</h3></a>
+				<p class="card-text"><i>Une présentation claire ainsi qu'un texte concis et rigoureux sur le plan mathématique...</i></p>
+				</div>
+			</div>
+			<div class="card book d-none d-md-block">
+				<div class="card-body">
+				<a onclick="select(id4)" href="book.html"><h3 class="card-title black">Projet 4</h3></a>
+				<p class="card-text"><i>Original et stimulant, cet ouvrage aborde au travers d'exemples attrayants et concrets...</i></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <section>
+    <h2 class="display-5">Recommandé pour vous&nbsp;<i class="fas fa-angle-right"></i></h2>
+    <div class="d-flex flex-row justify-content-center">
+      <div id="Pascalus Calculus" class="card book">
+        <div class="card-body">
+        <a onclick="select(id5)" href="projet.html"><h3 class="card-title black">Projet 5</h3></a>
+        <p class="card-text"><i>La matière est présentée de façon simple et stimulante, et l'accent est mis sur les habiletés essentielles à la réussite en chimie organique</i></p>
+        </div>
+      </div>
+      <div class="card book">
+        <div class="card-body">
+        <a onclick="select(id6)" href="projet.html"><h3 class="card-title black">Projet 6</h3></a>
+        <p class="card-text"><i>Mécanique pour ingénieurs, 3e édition accompagne les étudiants de premier cycle universitaire en génie...</i></p>
+        </div>
+      </div>
+      <div class="card book">
+        <div class="card-body">
+        <a onclick="select(id7)" href="projet.html"><h3 class="card-title black">Projet 7</h3></a>
+        <p class="card-text"><i>Une présentation claire ainsi qu'un texte concis et rigoureux sur le plan mathématique...</i></p>
+        </div>
+      </div>
+      <div class="card book d-none d-md-block">
+        <div class="card-body">
+        <a onclick="select(id8)" href="book.html"><h3 class="card-title black">Projet 8</h3></a>
+        <p class="card-text"><i>Original et stimulant, cet ouvrage aborde au travers d'exemples attrayants et concrets...</i></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+	<!--This is are global script-->
+	<!--Load script at the end of body for better loading efficiency-->
+  <script src="script/script.js"></script>
+</body>
+	
+<div class="bottom container-fluid justify-content-center">
+	<div class="row">
+	<div class="col-md"></div>
+    <div class="col-sm">
+      <p><a href="#">Politiques</a></p>
+      <p><a href="#">Accessibilité</a></p>
+      <p><a href="#">Droit d'auteur</a></p>
+    </div>
+    <div class="col-sm">
+      <p><a href="#">Freebrary en bref</a></p>
+      <p><a href="#">Nous contacter</a></p>
+      <p><a href="#">Nos colloborateur</a></p>
+    </div>
+    <div class="col-sm">
+     <p>65 University Private,<br> Ottawa,<br> ON K1N 6N5</p>
+     <p>(613) 562-5213
+    </div>
+    <div class="col-md"></div>
+  </div>
+  </div>
+</html>
