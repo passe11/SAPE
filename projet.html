@@ -46,7 +46,7 @@
     <input id="form-field" class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
   </form>
 </li>
-    <li id="login" class="nav-item"><a href="index.html" class="nav-link" href="#"><button class="btn-primary" style="background-color: #8f001a  !important; border-color: #fff !important"  >login</button></a></li>
+    <li id="login" class="nav-item"><a href="login.html" class="nav-link" href="#"><button class="btn-primary" style="background-color: #8f001a  !important; border-color: #fff !important"  >login</button></a></li>
     <li id="compte"><div class="dropdown transparent">
   <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #8f001a  !important; border-color: #fff !important" >
     <i class="fas fa-user"></i>&nbsp;Mon compte
@@ -66,13 +66,10 @@
 		<div class="col-lg-8 col-sm-12">
 			<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6 col-md-3 col-sm-12">
-					<img id="bookImage" class="img-fluid" src="images/book-black.png"  alt="Book">
-				</div>
-				<div class="col-lg-6 col-md-9 col-sm-12">	
+				<div class="col-lg-9 col-md-9 col-sm-12">	
 					<h2 id="name">Book name</h2>
-					<p><strong>Autheur(s):</strong> <span id="author"></span></p>
-					<p><strong>Cours associés:</strong> <span id="cour"></span></p>
+					<p><strong>superviseur(s):</strong> <span id="author"></span></p>
+					<p><strong>Cours recomandé:</strong> <span id="cour"></span></p>
 					<p><strong>Description:</strong></p><p id="description" style="font-style:oblique">description</p>
 				</div>
 		</div>
@@ -82,7 +79,7 @@
 			<div class="card text-dark bg-light mb-3">
 				<div class="card-body">
 			<p class="card-title"><span id="disponible">x</span>&nbsp;place(s) disponible(s)</p>
-			<button id="bookingButton" onClick="booking()" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Réserver</button>
+			<button id="bookingButton" onClick="booking()" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Appliquer</button>
       <button id="waitListButton" onClick="booking()" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#attenteModal">Joindre liste d'attente</button>
 
 <!-- Attente modal -->
@@ -231,7 +228,7 @@
     </div>
     <div class="col-sm">
      <p>65 University Private,<br> Ottawa,<br> ON K1N 6N5</p>
-     <p>(613) 562-5213
+     <p>(613) 562-5213</p>
     </div>
     <div class="col-md"></div>
   </div>
