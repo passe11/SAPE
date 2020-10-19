@@ -9,11 +9,11 @@ var id1= {
   format:'papier'
 };
 var id2= {
-  bookName:'Mécanique pour ingénieurs, 3e éd.',
+  bookName:'Projet 2 ',
   author: 'Ferdinand P. Beer, E. Russell Johnston Jr., David F. Mazurek',
   disponible: 18,
   class: 'GNG 1505, GNG 1105',
-  description:'Mécanique pour ingénieurs, 3e édition accompagne les étudiants de premier cycle universitaire en génie ainsi que leurs professeurs dans les cours de statique (volume 1) et de dynamique (volume 2)',
+  description:'Projet d&apos;intelligence artificiel, et de devellopement industriel.
   image:'images/mecanique.jpg',
   langue:'francais',
   format:'papier'
