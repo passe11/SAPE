@@ -13,7 +13,7 @@ var id2= {
   author: 'Ferdinand P. Beer, E. Russell Johnston Jr., David F. Mazurek',
   disponible: 18,
   class: 'GNG 1505, GNG 1105',
-  description:'Projet d&apos;intelligence artificiel, et de devellopement industriel.
+  description:'Projet d&apos;intelligence artificiel, et de devellopement industriel.',
   image:'images/mecanique.jpg',
   langue:'francais',
   format:'papier'
