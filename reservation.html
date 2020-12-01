@@ -20,9 +20,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <!--Include script loads common html components-->
-	<script src="javascript/reservation.js"></script>
-  <script src="javascript/script.js"></script>
+  <!--Include script loads common html components
+	<script src="javascript/reservation.js"></script>-->
+  <script src="script/script.js"></script>
 </head>
 <body class="container margin-top">
 <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg">
@@ -73,5 +73,8 @@
 <h2 style="display: inline">Nouveau Projet</h2><button type="submit" value="submit" class="fas fa-plus"></button>
 </form>
 </section>
+<script>
+  document.getElementById("loader").innerHTML= ('<h3>'+ localStorage.getItem("projetName") + '</h3>');
+</script>
 </body>
 </html>

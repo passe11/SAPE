@@ -21,8 +21,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <!--Include script loads common html components-->
-	<script src="javascript/reservation.js"></script>
-  <script src="javascript/script.js"></script>
 </head>
 <body class="container margin-top">
 <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg">
@@ -64,15 +62,15 @@
     </div>
 </nav>
 <h2>New project</h2>
-<form action="reservation.html">
+<form id="projetform" action="reservation.html">
     <div class="form-group">
       <label for="projectName">Project Name</label>
-      <input type="email" class="form-control" id="projectName" aria-describedby="projectNameHelp" placeholder="Enter project name">
+      <input type="name" class="form-control" id="projectName" aria-describedby="projectNameHelp" placeholder="Enter project name">
       <small id="projectNameHelp" class="form-text text-muted">Short but relevant</small>
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Description</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Description">
+      <label for="description">Description</label>
+      <input type="name" class="form-control" id="description" placeholder="Description">
     </div>
   
     <div class="form-group">
@@ -96,6 +94,11 @@
   </form>
     
 </form>
-
+<script>
+    $( "#projetform" ).submit( function() {
+	localStorage.setItem("projetName", document.getElementById("projectName").value);
+    localStorage.setItem("projetDescription", document.getElementById("description").value);
+})
+</script>
 </body>
 </html>
