@@ -169,7 +169,6 @@ function searchLoad(){
   description:'Présente les concepts de base de l&apos;algèbre linéaire et les outils dont l&apos;étudiant aura besoin dans sa vie professionnelle. Propose une large sélection d&apos;applications, d&apos;exemples et d&apos;exercices permettant d&apos;aborder les difficultés réelles rencontrées.',
   image:'images/algebre.jpg'*/
 document.getElementById("projetShelf").innerHTML=livreStrings;
-alert("test2");
 return true;
 }
 
